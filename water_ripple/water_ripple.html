@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+        <script src="jquery.ripples-min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title></title>
+    </head>
+    <body>
+
+        <div class="full-landing-image">
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+        <script src="jquery.ripples-min.js"></script>
+        <script src="jquery.ripples.js"></script>
+        
+        <script>    $(document).ready(function(){
+                $(".full-landing-image").ripples({
+                    
+                dropRadius: 20,
+                perturbance: 0.05,
+               
+            });
+            
+
+        
+
+      setInterval(function(){
+          var $el=$(".full-landing-image");
+          var x= Math.random()*$el.outerWidth();
+          var y =Math.random()*$el.outHeight();
+          var dropRadius= 20;
+          var strength= 0.04 + Math.random()*0.04;
+
+          $el.ripple('drop',x,y,dropRadius,strength);
+      },200);
+        
+    });
+
+        </script>
+        
+           
+                
+          
+      
+       
+</html>

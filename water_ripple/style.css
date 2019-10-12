@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+}
+.full-landing-image{
+    width: 100%;
+    height: 100vh;
+    background: url('hand.jpg'); 
+    background-repeat:no-repeat center ;
+
+    
+    background-size:cover;
+}
+
+@media only screen and (max-width: 1000px) {
+   
+    .full-landing-image{
+        background: url('hand.jpg'); 
+        
+               background-size:100% 100%;
+    } 
+}
